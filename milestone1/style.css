@@ -48,3 +48,8 @@ body{
 .iconBell{
     width: 40px;
 }
+
+/* soluzione momentanea */
+.listaContatti{
+    height: 70vh;
+}
