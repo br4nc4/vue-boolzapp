@@ -14,7 +14,7 @@
     <div class="top-bg">
         <div id="app">
             <div class="container main-container">
-                <div class="row overflow-hidden ">
+                <div class="row overflow-hidden">
                     <!-- COLONNA DI SINISTRA -->
                     <div class="col-4 px-0">
                         <div class="myCol">
@@ -78,17 +78,17 @@
                             </div>
 
                             <!-- LISTA CONTATTI -->
-                            <div class="d-flex flex-column flex-grow-1 overflow-auto">
+                            <div class="d-flex flex-column flex-grow-1">
 
                                 <!-- CONTATTO DA REPLICARE CON V-FOR  -->
-                                <div class="d-flex justify-content-between p-2 border-bottom">
+                                <div v-for="contact in listaContatti" class="d-flex justify-content-between p-2 border-bottom  overflow-hidden">
                                     <!-- AVATAR, NOME, ULTIMO MESSAGIO -->
-                                    <div class="d-flex">
+                                    <div class="d-flex overflow-auto">
                                         <!-- IMMAGINE AVATAR -->
-                                        <img class="rounded-circle avatar" src="img/avatar_1.jpg" alt="">
+                                        <img class="rounded-circle avatar" :src="contact.avatar" alt="">
                                         <!-- NOME, ULTIMO MESSAGIO -->
                                         <div>
-                                            <span class="fw-bold">Michele</span>
+                                            <span class="fw-bold">{{contact.name}}</span>
                                             <br>
                                             <small class="text-secondary">Ultimo messaggio inviato</small>
                                         </div>

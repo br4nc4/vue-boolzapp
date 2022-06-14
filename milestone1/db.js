@@ -1,4 +1,5 @@
 const contatti = [
+    /* PRIMO OGGETTO */
     {
         name: "Michele",
         avatar: "img/avatar_1.jpg",
@@ -21,6 +22,7 @@ const contatti = [
         },
         ],
     },
+    /* SECONDO OGGETTO */
     {
         name: "Fabio",
         avatar: "img/avatar_2.jpg",
@@ -43,6 +45,7 @@ const contatti = [
         },
         ],
     },
+    /* TERZO OGGETTO */
     {
         name: "Samuele",
         avatar: "img/avatar_3.jpg",
@@ -65,6 +68,7 @@ const contatti = [
         },
         ],
     },
+    /* QUARTO OGGETTO */
     {
         name: "Alessandro B.",
         avatar: "img/avatar_4.jpg",
@@ -82,6 +86,7 @@ const contatti = [
         },
         ],
     },
+    /* QUINTO OGGETTO */
     {
         name: "Alessandro L.",
         avatar: "img/avatar_5.jpg",
@@ -99,6 +104,7 @@ const contatti = [
         },
         ],
     },
+    /* SESTO OGGETTO */
     {
         name: "Claudia",
         avatar: "img/avatar_6.jpg",
@@ -121,6 +127,7 @@ const contatti = [
         },
         ],
     },
+    /* SETTIMO OGGETTO */
     {
         name: "Federico",
         avatar: "img/avatar_7.jpg",
@@ -138,6 +145,7 @@ const contatti = [
         },
         ],
     },
+    /* OTTAVO OGGETTO */
     {
         name: "Davide",
         avatar: "img/avatar_8.jpg",
