@@ -71,7 +71,7 @@
                             <div class="flex-shrink-0">
                                 <!-- INPUT -->
                                 <div class="p-2">
-                                    <div class="input-group input-group-sm mb-3 shadow-sm">
+                                    <div class="input-group input-group-sm mb-0 shadow-sm">
                                         <span class="input-group-text text-secondary" id="inputGroup-sizing-sm"><i class="fa-solid fa-magnifying-glass"></i></span>
                                         <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                                     </div>
@@ -79,7 +79,7 @@
                             </div>
 
                             <!-- LISTA CONTATTI -->
-                            <div class="d-flex flex-column flex-grow-1 overflow-auto listaContatti">
+                            <div class="d-flex flex-column flex-grow-1 listaContatti overflow-auto">
 
                                 <!-- CONTATTO DA REPLICARE CON V-FOR  -->
                                 <div v-for="contact in listaContatti" class="d-flex justify-content-between p-2 border-bottom">
@@ -146,8 +146,8 @@
                             </div>
 
                             <!-- TEXT AREA CON MESSAGGI UTENTI -->
-                            <div class="bg-Wapp">
-                                <div class="my-container overflow-auto">
+                            <div class="bg-Wapp textArea">
+                                <div class="my-container">
                                     <!--LISTA MESSAGGI -->
                                     <div class="d-flex flex-grow-1 flex-column gap-2">
                                         <!-- DIV DEL SINGOLO MESSAGGIO CON TESTO E ORARIO -->
@@ -180,6 +180,7 @@
                                             </div>
                                         </div>
 
+                                        <!-- MESSAGGIO -->
                                         <div class="d-flex flex-row">
                                             <div class="d-flex justify-content-between message sent">
                                                 <!-- TESTO -->
@@ -197,6 +198,28 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- INPUT INVIO MESSAGGIO -->
+                            <div class="d-flex flex-shrink-0 barMessage py-2">
+                                
+                                <div class="px-3">
+                                    <button type="button" class="btn text-secondary">
+                                        <i class="fa-regular fa-face-smile"></i>
+                                    </button>
+                                </div>
+
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="px-3">
+                                    <button type="button" class="btn text-secondary">
+                                        <i class="fa-solid fa-microphone"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </div>

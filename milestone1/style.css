@@ -10,7 +10,7 @@ body{
 }
 
 .top-bg{
-    height: 150px;
+    height: 120px;
     background-color: #078f89;
     position: absolute;
     top: 0;
@@ -20,7 +20,7 @@ body{
 
 .main-container{
     background-color: white;
-    height: calc(100vh - 32px);
+    height: 100vh;
     margin-top: 16px;
     margin-bottom: 16px;
     position: relative;
@@ -51,14 +51,26 @@ body{
     width: 40px;
 }
 
-/* soluzione momentanea */
+/***************************************************************************************/
+/* ALTEZZE */
 .listaContatti{
-    height: 70vh;
+    height: 500px;
 }
 
+/* .myColLeft{
+    height: calc(100vh - 32px);
+} */
+
+/* .textArea{
+    height: calc(100vh - 32px);
+} */
+
+/* .myColRight{
+    height: calc(100vh - 32px);
+} */
+/**************************************************************************************/
 .bg-Wapp{
     background-image: url("./img/mine.jpg");
-    min-height: 1000px;
 }
 
 .message{
@@ -77,4 +89,8 @@ body{
 
 .recevied{
     background-color: var(--ms-recevied);
+}
+
+.barMessage{
+    background-color: #f3eeea;
 }
