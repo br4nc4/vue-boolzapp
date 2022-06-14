@@ -1,0 +1,20 @@
+body{
+    background-color: #e1ded8;
+}
+
+.top-bg{
+    height: 150px;
+    background-color: #078f89;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-container{
+    background-color: white;
+    height: 90vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    position: relative;
+}
