@@ -19,12 +19,12 @@
                     <div class="col-4 px-0">
                         <div class="myCol">
                             <!-- PRIMO DIV -->
-                            <div class="d-flex flex-shrik-0 py-2 justify-content-between topLeftDivOneBg">
+                            <div class="d-flex flex-shrik-0 p-2 justify-content-between topLeftDivOneBg">
                                 <!-- MY USER AVATAR-->
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle avatar" src="img/avatar_io.jpg" alt="">
 
-                                    <h6>Sofia</h6>
+                                    <span>Sofia</span>
                                 </div>
 
                                 <!-- ICONE LATO DESTRO -->
@@ -59,7 +59,8 @@
                                 </div>
                                 <!-- TESTO RICEVI NOTIFICHE -->
                                 <div class="ps-1">
-                                    <h6 class="mb-0">Ricevi notifiche di nuovi messaggi</h6>
+                                    <span>Ricevi notifiche di nuovi messaggi</span>
+                                    <br>
                                     <a class="text-secondary" href="#">Attiva notifiche desktop</a>
                                 </div>
                             </div>
@@ -68,14 +69,34 @@
                             <!-- CERCA CONTATTI & CHAT -->
                             <div class="flex-shrink-0">
                                 <!-- INPUT -->
+                                <div class="p-2">
+                                    <div class="input-group input-group-sm mb-3 shadow-sm">
+                                        <span class="input-group-text text-secondary" id="inputGroup-sizing-sm"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- LISTA CONTATTI -->
-                            <div class="d-flex flex-direction-column flex-grow-1 overflow-auto">
+                            <div class="d-flex flex-column flex-grow-1 overflow-auto">
 
                                 <!-- CONTATTO DA REPLICARE CON V-FOR  -->
-                                <div class="flex-shrink-0">
-
+                                <div class="d-flex justify-content-between p-2 border-bottom">
+                                    <!-- AVATAR, NOME, ULTIMO MESSAGIO -->
+                                    <div class="d-flex">
+                                        <!-- IMMAGINE AVATAR -->
+                                        <img class="rounded-circle avatar" src="img/avatar_1.jpg" alt="">
+                                        <!-- NOME, ULTIMO MESSAGIO -->
+                                        <div>
+                                            <span class="fw-bold">Michele</span>
+                                            <br>
+                                            <small class="text-secondary">Ultimo messaggio inviato</small>
+                                        </div>
+                                    </div>
+                                    <!-- ORARIO -->
+                                    <div>
+                                        <small class="text-secondary">12:00</small>
+                                    </div>
                                 </div>
 
                             </div>
