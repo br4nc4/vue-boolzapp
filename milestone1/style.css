@@ -1,3 +1,7 @@
+:root{
+    --bs-color-primary: #bab3b8;
+}
+
 body{
     background-color: #e1ded8;
 }
@@ -17,4 +21,17 @@ body{
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
     position: relative;
+}
+
+.avatar{
+    width: 50px;
+}
+
+.iconDetails{
+    color: var(--bs-color-primary);
+    font-size: 19px;
+}
+
+.topDiv{
+    background-color: #eaeaea;
 }

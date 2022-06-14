@@ -14,20 +14,39 @@
     <div class="top-bg">
         <div id="app">
             <div class="container main-container">
-                <div class="row overflow-hidden">
+                <div class="row overflow-hidden ">
                     <!-- COLONNA DI SINISTRA -->
-                    <div class="col-3">
+                    <div class="col-4 topDiv">
                         <div class="myCol">
                             <!-- PRIMO DIV -->
-                            <div class="d-flex flex-shrik-0">
+                            <div class="d-flex flex-shrik-0 py-2 justify-content-between">
                                 <!-- MY USER AVATAR-->
-                                <div>
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle avatar" src="img/avatar_io.jpg" alt="">
 
+                                    <h6>Sofia</h6>
                                 </div>
 
                                 <!-- ICONE LATO DESTRO -->
                                 <div>
-
+                                    <ul class="nav">
+                                        <!-- PRIMA ICONA -->
+                                        <li class="nav-item">
+                                            <a
+                                            class="nav-link active iconDetails px-2" aria-current="page" href="#"><i class="fa-solid fa-circle-notch"></i></a>
+                                        </li>
+                                        <!-- SECONDA ICONA -->
+                                        <li class="nav-item">
+                                            <a
+                                            class="nav-link active iconDetails px-2" aria-current="page" href="#"><i class="fa-solid fa-message"></i></a>
+                                        </li>
+                                        <!-- TERZA ICONA -->
+                                        <li class="nav-item">
+                                            <a
+                                            class="nav-link active iconDetails
+                                            px-2" aria-current="page" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <!-- SECONDO DIV -->
@@ -54,13 +73,14 @@
                         </div>
                     </div>
 
-                    <div class="col-9">
+                    <div class="col-8">
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="db.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
