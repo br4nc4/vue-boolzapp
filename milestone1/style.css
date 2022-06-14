@@ -1,5 +1,6 @@
 :root{
     --bs-color-primary: #bab3b8;
+    --bell-color: #8cdbfa;
 }
 
 body{
@@ -32,6 +33,18 @@ body{
     font-size: 19px;
 }
 
-.topDiv{
+.topLeftDivOneBg{
     background-color: #eaeaea;
+}
+
+.topLeftDivtwoBg{
+    background-color: var(--bell-color);
+}
+
+.bell{
+    color: var(--bell-color);
+}
+
+.iconBell{
+    width: 40px;
 }
