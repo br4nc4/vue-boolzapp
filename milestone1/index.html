@@ -19,7 +19,7 @@
                     <div class="col-4 px-0">
                         <div class="myCol">
                             <!-- PRIMO DIV -->
-                            <div class="d-flex flex-shrik-0 p-2 justify-content-between topLeftDivOneBg overflow-hidden">
+                            <div class="d-flex flex-shrik-0 p-2 justify-content-between topLeftDivOneBg">
                                 <!-- MY USER AVATAR-->
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle avatar" src="img/avatar_io.jpg" alt="">
@@ -52,7 +52,7 @@
 
                             <!-- SECONDO DIV -->
                             <!-- RICEVI NOTIFICHE MESSAGGI -->
-                            <div class="d-flex flex-shrik-0 topLeftDivtwoBg py-2 px-3  overflow-hidden">
+                            <div class="d-flex flex-shrik-0 topLeftDivtwoBg py-2 px-3">
                                 <!-- ICONA BELL NOTIFICHE -->
                                 <div class="bg-light d-flex justify-content-center align-items-center rounded-circle px-3">
                                     <i class="fa-solid fa-bell-slash bell"></i>
@@ -67,7 +67,7 @@
 
                             <!-- TERZO DIV -->
                             <!-- CERCA CONTATTI & CHAT -->
-                            <div class="flex-shrink-0 overflow-hidden">
+                            <div class="flex-shrink-0">
                                 <!-- INPUT -->
                                 <div class="p-2">
                                     <div class="input-group input-group-sm mb-3 shadow-sm">
@@ -78,12 +78,12 @@
                             </div>
 
                             <!-- LISTA CONTATTI -->
-                            <div class="d-flex flex-column flex-grow-1  overflow-hidden">
+                            <div class="d-flex flex-column flex-grow-1">
 
                                 <!-- CONTATTO DA REPLICARE CON V-FOR  -->
-                                <div v-for="contact in listaContatti" class="d-flex justify-content-between p-2 border-bottom  overflow-hidden">
+                                <div v-for="contact in listaContatti" class="d-flex justify-content-between p-2 border-bottom  overflow-auto">
                                     <!-- AVATAR, NOME, ULTIMO MESSAGIO -->
-                                    <div class="d-flex overflow-auto">
+                                    <div class="d-flex">
                                         <!-- IMMAGINE AVATAR -->
                                         <img class="rounded-circle avatar" :src="contact.avatar" alt="">
                                         <!-- NOME, ULTIMO MESSAGIO -->
