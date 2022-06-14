@@ -1,6 +1,8 @@
 :root{
     --bs-color-primary: #bab3b8;
     --bell-color: #8cdbfa;
+    --ms-sent: white;
+    --ms-recevied: #d5f9ba;
 }
 
 body{
@@ -33,11 +35,11 @@ body{
     font-size: 19px;
 }
 
-.topLeftDivOneBg{
+.topDivBg{
     background-color: #eaeaea;
 }
 
-.topLeftDivtwoBg{
+.bgNotif{
     background-color: var(--bell-color);
 }
 
@@ -52,4 +54,27 @@ body{
 /* soluzione momentanea */
 .listaContatti{
     height: 70vh;
+}
+
+.bg-Wapp{
+    background-image: url("./img/mine.jpg");
+    min-height: 1000px;
+}
+
+.message{
+    gap: 35px;
+    min-height: 50px;
+    border-radius: 10px
+}
+
+.my-container{
+    padding: 50px 65px;
+}
+
+.sent{
+    background-color: var(--ms-sent);
+}
+
+.recevied{
+    background-color: var(--ms-recevied);
 }

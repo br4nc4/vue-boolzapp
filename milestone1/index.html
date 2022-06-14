@@ -15,11 +15,11 @@
         <div id="app">
             <div class="container main-container overflow-hidden">
                 <div class="row">
-                    <!-- COLONNA DI SINISTRA -->
-                    <div class="col-4 px-0">
-                        <div class="myCol">
+                    <!-- COLONNA DI SINISTRA CON CONTATTI-->
+                    <div class="col-4 px-0 border-end">
+                        <div class="myColLeft">
                             <!-- PRIMO DIV -->
-                            <div class="d-flex flex-shrik-0 p-2 justify-content-between topLeftDivOneBg h-100">
+                            <div class="d-flex flex-shrik-0 p-2 justify-content-between topDivBg">
                                 <!-- MY USER AVATAR-->
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle avatar" src="img/avatar_io.jpg" alt="">
@@ -48,11 +48,12 @@
                                         </li>
                                     </ul>
                                 </div>
+
                             </div>
 
                             <!-- SECONDO DIV -->
                             <!-- RICEVI NOTIFICHE MESSAGGI -->
-                            <div class="d-flex flex-shrik-0 topLeftDivtwoBg py-2 px-3 h-100">
+                            <div class="d-flex flex-shrik-0 bgNotif py-2 px-3">
                                 <!-- ICONA BELL NOTIFICHE -->
                                 <div class="bg-light d-flex justify-content-center align-items-center rounded-circle px-3">
                                     <i class="fa-solid fa-bell-slash bell"></i>
@@ -67,7 +68,7 @@
 
                             <!-- TERZO DIV -->
                             <!-- CERCA CONTATTI & CHAT -->
-                            <div class="flex-shrink-0 h-100">
+                            <div class="flex-shrink-0">
                                 <!-- INPUT -->
                                 <div class="p-2">
                                     <div class="input-group input-group-sm mb-3 shadow-sm">
@@ -103,9 +104,103 @@
                         </div>
                     </div>
 
-                    <div class="col-8">
+                    <!-- COLONNA DI DESTRA CON TEXT AREA E INVIO MESSAGGI-->
+                    <div class="col-8 px-0">
+                        <div class="myColRight">
+                            <!-- DIV POSTO SOPRA LA TEXT AREA CON I MESSAGGI -->
+                            <div class="flex-shrink-0 d-flex justify-content-between topDivBg p-2">
+                                <!-- BLOCCO DI SINISTRA CON IMMAGINE AVATAR, NOME E ULTIMO ACCESSO -->
+                                <div class="d-flex">
+                                    <!-- IMMAGINE AVATAR -->
+                                    <img class="rounded-circle avatar" src="img/avatar_1.jpg" alt="">
+                                    <!-- NOME, ULTIMO ACCESSO-->
+                                    <div>
+                                        <span>Michele</span>
+                                        <br>
+                                        <small class="text-secondary">Ultimo accesso oggi alle 12:00</small>
+                                    </div>
+                                </div>
+
+                                <!-- BLOCCO DI DESTRA CON TRE ICONE -->
+                                <div>
+                                    <ul class="nav">
+                                        <!-- PRIMA ICONA -->
+                                        <li class="nav-item">
+                                            <a
+                                        class="nav-link active iconDetails px-2" aria-current="page" href="#"><i class="fa-solid fa-circle-notch"></i></a>
+                                        </li>
+                                        <!-- SECONDA ICONA -->
+                                        <li class="nav-item">
+                                            <a
+                                        class="nav-link active iconDetails px-2" aria-current="page" href="#"><i class="fa-solid fa-paperclip"></i></a>
+                                        </li>
+                                        <!-- TERZA ICONA -->
+                                        <li class="nav-item">
+                                            <a
+                                        class="nav-link active iconDetails
+                                        px-2" aria-current="page" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <!-- TEXT AREA CON MESSAGGI UTENTI -->
+                            <div class="bg-Wapp">
+                                <div class="my-container overflow-auto">
+                                    <!--LISTA MESSAGGI -->
+                                    <div class="d-flex flex-grow-1 flex-column gap-2">
+                                        <!-- DIV DEL SINGOLO MESSAGGIO CON TESTO E ORARIO -->
+                                        <div class="d-flex flex-row-reverse">
+                                            <div class="d-flex justify-content-between message recevied">
+                                                <!-- TESTO -->
+                                                <div class="d-flex align-items-start py-2 px-3">
+                                                    <span>Hai portato a spasso il cane?</span>
+                                                </div>
+
+                                                <div class="d-flex align-items-end pe-1">
+                                                    <!-- ORARIO -->
+                                                    <small class="text-secondary">15:30</small>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- MESSAGGIO -->
+                                        <div class="d-flex flex-row-reverse">
+                                            <div class="d-flex justify-content-between message recevied">
+                                                <!-- TESTO -->
+                                                <div class="d-flex align-items-start py-2 px-3">
+                                                    <span>Ricordati di stendere i panni</span>
+                                                </div>
+                                                
+                                                <div class="d-flex align-items-end pe-1">
+                                                    <!-- ORARIO -->
+                                                    <small class="text-secondary">15:30</small>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row">
+                                            <div class="d-flex justify-content-between message sent">
+                                                <!-- TESTO -->
+                                                <div class="d-flex align-items-start py-2 px-3">
+                                                    <span>Tutto fatto!</span>
+                                                </div>
+
+                                                <div class="d-flex align-items-end pe-1">
+                                                    <!-- ORARIO -->
+                                                    <small class="text-secondary">16:15</small>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
+
                 </div>
             </div>
         </div>
