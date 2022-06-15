@@ -1,7 +1,6 @@
 const contatti = [
     /* PRIMO OGGETTO */
     {
-        currentContact: 1,
         name: "Michele",
         avatar: "img/avatar_1.jpg",
         visible: true,
@@ -25,7 +24,6 @@ const contatti = [
     },
     /* SECONDO OGGETTO */
     {
-        currentContact: 2,
         name: "Fabio",
         avatar: "img/avatar_2.jpg",
         visible: true,
@@ -49,7 +47,6 @@ const contatti = [
     },
     /* TERZO OGGETTO */
     {
-        currentContact: 3,
         name: "Samuele",
         avatar: "img/avatar_3.jpg",
         visible: true,
@@ -73,7 +70,6 @@ const contatti = [
     },
     /* QUARTO OGGETTO */
     {
-        currentContact: 4,
         name: "Alessandro B.",
         avatar: "img/avatar_4.jpg",
         visible: true,
@@ -92,7 +88,6 @@ const contatti = [
     },
     /* QUINTO OGGETTO */
     {
-        currentContact: 5,
         name: "Alessandro L.",
         avatar: "img/avatar_5.jpg",
         visible: true,
@@ -111,7 +106,6 @@ const contatti = [
     },
     /* SESTO OGGETTO */
     {
-        currentContact: 6,
         name: "Claudia",
         avatar: "img/avatar_6.jpg",
         visible: true,
@@ -135,7 +129,6 @@ const contatti = [
     },
     /* SETTIMO OGGETTO */
     {
-        currentContact: 7,
         name: "Federico",
         avatar: "img/avatar_7.jpg",
         visible: true,
@@ -154,7 +147,6 @@ const contatti = [
     },
     /* OTTAVO OGGETTO */
     {
-        currentContact: 8,
         name: "Davide",
         avatar: "img/avatar_8.jpg",
         visible: true,
@@ -177,7 +169,6 @@ const contatti = [
         ],
     },
     {
-        currentContact: 9,
         name: "Davide",
         avatar: "img/avatar_8.jpg",
         visible: true,
