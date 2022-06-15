@@ -1,8 +1,8 @@
 :root{
     --bs-color-primary: #bab3b8;
     --bell-color: #8cdbfa;
-    --ms-sent: white;
-    --ms-recevied: #d5f9ba;
+    --ms-sent: #d5f9ba;
+    --ms-recevied: white;
 }
 
 body{
