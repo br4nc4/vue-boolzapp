@@ -69,7 +69,7 @@ body{
     background-color: var(--ms-sent);
 }
 
-.recevied{
+.received{
     background-color: var(--ms-recevied);
 }
 

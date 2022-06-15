@@ -152,7 +152,7 @@
                                     <div v-for="message in currentUser" class="d-flex flex-column gap-2">
                                         <!-- DIV DEL SINGOLO MESSAGGIO CON TESTO E ORARIO -->
                                         <div class="d-flex flex-row-reverse">
-                                            <div class="d-flex justify-content-between message" :class="">
+                                            <div class="d-flex justify-content-between message" :class="{'sent': message.status === `sent`, 'received': message.status === `received`}">
                                                 <!-- TESTO -->
                                                 <div class="d-flex align-items-start py-2 px-3">
                                                     <span>{{message.message}}</span>
@@ -160,7 +160,7 @@
 
                                                 <div class="d-flex align-items-end pe-1">
                                                     <!-- ORARIO -->
-                                                    <small class="text-secondary">15.30</small>
+                                                    <small class="text-secondary">{{message.date}}</small>
                                                 </div>
                                             </div>
                                         </div>
