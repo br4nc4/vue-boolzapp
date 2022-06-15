@@ -51,24 +51,6 @@ body{
     width: 40px;
 }
 
-/***************************************************************************************/
-/* ALTEZZE */
-.listaContatti{
-    height: 500px;
-}
-
-/* .myColLeft{
-    height: calc(100vh - 32px);
-} */
-
-.textArea{
-    height: 590px;
-}
-
-/* .myColRight{
-    height: 100%;
-} */
-/**************************************************************************************/
 .bg-Wapp{
     background-image: url("./img/mine.jpg");
 }
