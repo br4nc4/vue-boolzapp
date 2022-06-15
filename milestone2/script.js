@@ -27,7 +27,7 @@ new Vue({
     },
     methods:{
         activeContact: function(currentContact){
-            return console.log(this.currentUser = currentContact);
+            return console.log(this.currentUser = currentContact.messages);
     }
     }
 });
