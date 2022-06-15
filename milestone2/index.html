@@ -81,8 +81,8 @@
                             <!-- LISTA CONTATTI -->
                             <div class="flex-grow-1 listaContatti overflow-auto">
 
-                                <!-- CONTATTO DA REPLICARE CON V-FOR  -->
-                                <div v-for="contact in listaContatti" class="d-flex justify-content-between p-2 border-bottom">
+                                <!-- CONTATTI DA REPLICARE CON V-FOR  -->
+                                <div v-for="contact in listaContatti" @click="activeContact(contact)" class="d-flex justify-content-between p-2 border-bottom">
                                     <!-- AVATAR, NOME, ULTIMO MESSAGIO -->
                                     <div class="d-flex">
                                         <!-- IMMAGINE AVATAR -->
@@ -149,51 +149,23 @@
                             <div class="bg-Wapp textArea h-100">
                                 <div class="my-container flex-grow-1 overflow-auto h-100">
                                     <!--LISTA MESSAGGI -->
-                                    <div class="d-flex flex-column gap-2">
+                                    <div v-for="message in activeContact()" class="d-flex flex-column gap-2">
                                         <!-- DIV DEL SINGOLO MESSAGGIO CON TESTO E ORARIO -->
                                         <div class="d-flex flex-row-reverse">
                                             <div class="d-flex justify-content-between message recevied">
                                                 <!-- TESTO -->
                                                 <div class="d-flex align-items-start py-2 px-3">
-                                                    <span>Hai portato a spasso il cane?</span>
+                                                    <span>{{message.messages}}</span>
                                                 </div>
 
                                                 <div class="d-flex align-items-end pe-1">
                                                     <!-- ORARIO -->
-                                                    <small class="text-secondary">15:30</small>
+                                                    <small class="text-secondary">15.30</small>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <!-- MESSAGGIO -->
-                                        <div class="d-flex flex-row-reverse">
-                                            <div class="d-flex justify-content-between message recevied">
-                                                <!-- TESTO -->
-                                                <div class="d-flex align-items-start py-2 px-3">
-                                                    <span>Ricordati di stendere i panni</span>
-                                                </div>
-                                                
-                                                <div class="d-flex align-items-end pe-1">
-                                                    <!-- ORARIO -->
-                                                    <small class="text-secondary">15:30</small>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- MESSAGGIO -->
-                                        <div class="d-flex flex-row">
-                                            <div class="d-flex justify-content-between message sent">
-                                                <!-- TESTO -->
-                                                <div class="d-flex align-items-start py-2 px-3">
-                                                    <span>Tutto fatto!</span>
-                                                </div>
-
-                                                <div class="d-flex align-items-end pe-1">
-                                                    <!-- ORARIO -->
-                                                    <small class="text-secondary">16:15</small>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
 
                                     </div>
                                 </div>
