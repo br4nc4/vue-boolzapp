@@ -20,7 +20,7 @@ body{
 
 .main-container{
     background-color: white;
-    height: 100vh;
+    height: calc(100vh - 32px);
     margin-top: 16px;
     margin-bottom: 16px;
     position: relative;
@@ -61,12 +61,12 @@ body{
     height: calc(100vh - 32px);
 } */
 
-/* .textArea{
-    height: calc(100vh - 32px);
-} */
+.textArea{
+    height: 590px;
+}
 
 /* .myColRight{
-    height: calc(100vh - 32px);
+    height: 100%;
 } */
 /**************************************************************************************/
 .bg-Wapp{
