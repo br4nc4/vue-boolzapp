@@ -18,6 +18,13 @@ new Vue({
                 })
                 this.enterMessage ="";
             }
+
+            setTimeout (function(){
+                this.currentUser.messages.push({
+                    message: "ok",
+                    status: "received",
+                })
+            }, 1000);
         },
     }
 });
