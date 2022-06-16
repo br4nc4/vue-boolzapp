@@ -9,13 +9,15 @@ new Vue({
         activeContact: function(currentContact){
             this.currentUser = currentContact;
         },
-        
+
         inputMessage: function(){
-            this.listaContatti[this.currentUser].messages.push({
-                message: this.enterMessage,
-                status: "sent",
-            })
-            this.enterMessage ="";
+            if(this.currentUser !== 0){
+                this.currentUser.messages.push({
+                    message: this.enterMessage,
+                    status: "sent",
+                })
+                this.enterMessage ="";
+            }
         },
     }
 });
