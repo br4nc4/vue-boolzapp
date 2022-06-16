@@ -17,14 +17,14 @@ new Vue({
                     status: "sent",
                 })
                 this.enterMessage ="";
-            }
 
-            setTimeout (function(){
-                this.currentUser.messages.push({
-                    message: "ok",
-                    status: "received",
-                })
-            }, 1000);
+                setTimeout (function(){
+                    this.currentUser.messages.push({
+                        message: "ok",
+                        status: "received",
+                    })
+                }, 1000);
+            }
         },
     }
 });
