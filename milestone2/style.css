@@ -76,3 +76,7 @@ body{
 .barMessage{
     background-color: #f3eeea;
 }
+
+.active{
+    background-color: #e9ebeb;
+}

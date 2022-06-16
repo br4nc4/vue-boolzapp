@@ -82,7 +82,9 @@
                             <div class="flex-grow-1 listaContatti overflow-auto">
 
                                 <!-- CONTATTI DA REPLICARE CON V-FOR  -->
-                                <div v-for="contact in listaContatti" @click="activeContact(contact)" class="d-flex justify-content-between p-2 border-bottom">
+                                <div v-for="contact in listaContatti" @click="activeContact(contact)" 
+                                class="d-flex justify-content-between p-2 border-bottom" 
+                                :class="currentUser.id === contact.id ? 'active' : ''">
                                     <!-- AVATAR, NOME, ULTIMO MESSAGIO -->
                                     <div class="d-flex">
                                         <!-- IMMAGINE AVATAR -->
@@ -149,7 +151,7 @@
                             <div class="bg-Wapp textArea h-100">
                                 <div class="my-container flex-grow-1 overflow-auto h-100">
                                     <!--LISTA MESSAGGI -->
-                                    <div v-for="message in currentUser" class="d-flex flex-column mb-2">
+                                    <div v-for="message in currentUser.messages" class="d-flex flex-column mb-2">
                                         <!-- DIV DEL SINGOLO MESSAGGIO CON TESTO E ORARIO -->
                                         <div class="d-flex" :class="{'flex-row-reverse': message.status === `sent`}">
                                             <div class="d-flex justify-content-between message" :class="{'sent': message.status === `sent`, 'received': message.status === `received`}">

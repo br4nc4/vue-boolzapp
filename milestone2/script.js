@@ -6,7 +6,7 @@ new Vue({
     },
     methods:{
         activeContact: function(currentContact){
-            this.currentUser = currentContact.messages;
+            this.currentUser = currentContact;
     },
     }
 });
