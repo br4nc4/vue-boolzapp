@@ -183,7 +183,9 @@
                                 </div>
 
                                 <div class="input-group">
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control"
+                                    v-model="enterMessage" 
+                                    v-on:keydown.enter="inputMessage()">
                                 </div>
 
                                 <div class="px-3">
