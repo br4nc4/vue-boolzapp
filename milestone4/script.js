@@ -20,7 +20,7 @@ new Vue({
 
                 setTimeout (() => {
                     this.currentUser.messages.push({
-                        message: "ok",
+                        message: this.enterMessage,
                         status: "received",
                     })
                 }, 1000);

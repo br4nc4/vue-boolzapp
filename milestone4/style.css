@@ -1,0 +1,82 @@
+:root{
+    --bs-color-primary: #bab3b8;
+    --bell-color: #8cdbfa;
+    --ms-sent: #d5f9ba;
+    --ms-recevied: white;
+}
+
+body{
+    background-color: #e1ded8;
+}
+
+.top-bg{
+    height: 120px;
+    background-color: #078f89;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-container{
+    background-color: white;
+    height: calc(100vh - 32px);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.avatar{
+    width: 50px;
+}
+
+.iconDetails{
+    color: var(--bs-color-primary);
+    font-size: 19px;
+}
+
+.topDivBg{
+    background-color: #eaeaea;
+}
+
+.bgNotif{
+    background-color: var(--bell-color);
+}
+
+.bell{
+    color: var(--bell-color);
+}
+
+.iconBell{
+    width: 40px;
+}
+
+.bg-Wapp{
+    background-image: url("./img/mine.jpg");
+}
+
+.message{
+    gap: 35px;
+    min-height: 50px;
+    border-radius: 10px
+}
+
+.my-container{
+    padding: 50px 65px;
+}
+
+.sent{
+    background-color: var(--ms-sent);
+}
+
+.received{
+    background-color: var(--ms-recevied);
+}
+
+.barMessage{
+    background-color: #f3eeea;
+}
+
+.active{
+    background-color: #e9ebeb;
+}
