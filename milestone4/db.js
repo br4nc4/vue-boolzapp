@@ -3,7 +3,7 @@ const contatti = [
     {
         id:1,
         name: "Michele",
-        avatar: "img/avatar_1.jpg",
+        avatar: "_1",
         visible: true,
         messages: [
         {
@@ -27,7 +27,7 @@ const contatti = [
     {
         id:2,
         name: "Fabio",
-        avatar: "img/avatar_2.jpg",
+        avatar: "_2",
         visible: true,
         messages: [
         {
@@ -51,7 +51,7 @@ const contatti = [
     {
         id:3,
         name: "Samuele",
-        avatar: "img/avatar_3.jpg",
+        avatar: "_3",
         visible: true,
         messages: [
         {
@@ -75,7 +75,7 @@ const contatti = [
     {
         id:4,
         name: "Alessandro B.",
-        avatar: "img/avatar_4.jpg",
+        avatar: "_4",
         visible: true,
         messages: [
         {
@@ -94,7 +94,7 @@ const contatti = [
     {
         id:5,
         name: "Alessandro L.",
-        avatar: "img/avatar_5.jpg",
+        avatar: "_5",
         visible: true,
         messages: [
         {
@@ -113,7 +113,7 @@ const contatti = [
     {
         id:6,
         name: "Claudia",
-        avatar: "img/avatar_6.jpg",
+        avatar: "_6",
         visible: true,
         messages: [
         {
@@ -137,7 +137,7 @@ const contatti = [
     {
         id:7,
         name: "Federico",
-        avatar: "img/avatar_7.jpg",
+        avatar: "_7",
         visible: true,
         messages: [
         {
@@ -156,30 +156,7 @@ const contatti = [
     {
         id:8,
         name: "Davide",
-        avatar: "img/avatar_8.jpg",
-        visible: true,
-        messages: [
-        {
-            date: "10/01/2020 15:30:55",
-            message: "Ciao, andiamo a mangiare la pizza stasera?",
-            status: "received",
-        },
-        {
-            date: "10/01/2020 15:50:00",
-            message: "No, l'ho già mangiata ieri, ordiniamo sushi!",
-            status: "sent",
-        },
-        {
-            date: "10/01/2020 15:51:00",
-            message: "OK!!",
-            status: "received",
-        },
-        ],
-    },
-    {
-        id:9,
-        name: "Davide",
-        avatar: "img/avatar_8.jpg",
+        avatar: "_8",
         visible: true,
         messages: [
         {

@@ -20,11 +20,20 @@ new Vue({
 
                 setTimeout (() => {
                     this.currentUser.messages.push({
-                        message: this.enterMessage,
+                        message: "ok",
                         status: "received",
                     })
                 }, 1000);
             }
+        },
+
+        searchContacts: function(contact){
+            
+        },
+
+        getFormattedTime(date) {
+            const formattedTime = date.split(' ')[1];
+            return formattedTime.slice(0, formattedTime.length - 3);
         },
     }
 });

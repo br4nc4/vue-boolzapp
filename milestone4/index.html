@@ -24,7 +24,7 @@
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle avatar" src="img/avatar_io.jpg" alt="">
 
-                                    <span>Sofia</span>
+                                    <span class="ms-2">Sofia</span>
                                 </div>
 
                                 <!-- ICONE LATO DESTRO -->
@@ -59,7 +59,7 @@
                                     <i class="fa-solid fa-bell-slash bell"></i>
                                 </div>
                                 <!-- TESTO RICEVI NOTIFICHE -->
-                                <div class="ps-1">
+                                <div class="ps-1 ms-1">
                                     <span>Ricevi notifiche di nuovi messaggi</span>
                                     <br>
                                     <a class="text-secondary" href="#">Attiva notifiche desktop</a>
@@ -88,17 +88,21 @@
                                     <!-- AVATAR, NOME, ULTIMO MESSAGIO -->
                                     <div class="d-flex">
                                         <!-- IMMAGINE AVATAR -->
-                                        <img class="rounded-circle avatar" :src="contact.avatar" alt="">
+                                        <img class="rounded-circle avatar" :src="`img/avatar` + contact.avatar + `.jpg`" :alt="`Immagine di ` + contact.name">
                                         <!-- NOME, ULTIMO MESSAGIO -->
-                                        <div>
+                                        <div class="ms-3">
                                             <span class="fw-bold">{{contact.name}}</span>
                                             <br>
-                                            <small class="text-secondary">Ultimo messaggio inviato</small>
+                                            <small class="text-secondary">Ultimo messaggio inviato:
+                                                {{contact.messages[contact.messages.length - 1].message}}
+                                            </small>
                                         </div>
                                     </div>
                                     <!-- ORARIO -->
                                     <div>
-                                        <small class="text-secondary">12:00</small>
+                                        <small class="text-secondary">
+                                            <!-- {{getFormattedTime(contact.messages[contact.messages.length - 1].date)}} -->12:00
+                                        </small>
                                     </div>
                                 </div>
 
@@ -114,9 +118,9 @@
                                 <!-- BLOCCO DI SINISTRA CON IMMAGINE AVATAR, NOME E ULTIMO ACCESSO -->
                                 <div class="d-flex">
                                     <!-- IMMAGINE AVATAR -->
-                                    <img class="rounded-circle avatar" src="img/avatar_1.jpg" alt="">
+                                    <img class="rounded-circle avatar" :src="`img/avatar` + this.currentUser.avatar + `.jpg`" alt="">
                                     <!-- NOME, ULTIMO ACCESSO-->
-                                    <div>
+                                    <div class="ms-3">
                                         <span>{{currentUser.name}}</span>
                                         <br>
                                         <small class="text-secondary">Ultimo accesso oggi alle 12:00</small>
