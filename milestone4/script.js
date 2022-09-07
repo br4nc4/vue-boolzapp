@@ -4,6 +4,7 @@ new Vue({
         listaContatti: contatti,
         currentUser: 0,
         enterMessage:"",
+        searched:"",
     },
     methods:{
         activeContact: function(currentContact){
@@ -27,14 +28,28 @@ new Vue({
             }
         },
 
-        searchContacts: function(contact){
-            
+        searchContacts: function(){
+            /* let filteredContacts = []
+
+            for (let i = 0; i < listaContatti.length; i++) {
+                const searched = searched.toLowerCase();
+                const contact = listaContatti[i].name.toLowerCase();
+                
+                if(contact.includes(searched)){
+                    filteredContacts.push(listaContatti[i])
+                }
+            }
+
+            return filteredContacts; */
+            return this.listaContatti.filter((contact) => {
+            return contact.name.toLowerCase().includes(this.searched.trim(" ").toLowerCase());
+            }) 
         },
 
-        getFormattedTime(date) {
+        /* getFormattedTime(date) {
             const formattedTime = date.split(' ')[1];
             return formattedTime.slice(0, formattedTime.length - 3);
-        },
+        }, */
     }
 });
 

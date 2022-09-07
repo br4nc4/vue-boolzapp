@@ -73,7 +73,7 @@
                                 <div class="p-2">
                                     <div class="input-group input-group-sm mb-0 shadow-sm">
                                         <span class="input-group-text text-secondary" id="inputGroup-sizing-sm"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                        <input placeholder="Cerca o inizia una nuova chat" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                        <input placeholder="Cerca o inizia una nuova chat" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" v-model="searched">
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                             <div class="flex-grow-1 listaContatti overflow-auto">
 
                                 <!-- CONTATTI DA REPLICARE CON V-FOR  -->
-                                <div v-for="contact in listaContatti" @click="activeContact(contact)" 
+                                <div v-for="contact in searchContacts()" @click="activeContact(contact)" 
                                 class="d-flex justify-content-between p-2 border-bottom"
                                 :class="currentUser.id === contact.id ? 'active' : ''">
                                     <!-- AVATAR, NOME, ULTIMO MESSAGIO -->
