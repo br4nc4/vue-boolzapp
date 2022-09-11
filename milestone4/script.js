@@ -1,8 +1,10 @@
+dayjs.extend(dayjs_plugin_customParseFormat)
+
 new Vue({
     el:"#app",
     data:{
         listaContatti: contatti,
-        currentUser: 0,
+        currentUser: contatti[0],
         enterMessage:"",
         searched:"",
     },
@@ -16,6 +18,7 @@ new Vue({
                 this.currentUser.messages.push({
                     message: this.enterMessage,
                     status: "sent",
+                    date: null
                 })
                 this.enterMessage ="";
 
@@ -23,6 +26,7 @@ new Vue({
                     this.currentUser.messages.push({
                         message: "ok",
                         status: "received",
+                        date: null
                     })
                 }, 1000);
             }
@@ -31,26 +35,29 @@ new Vue({
         searchContacts: function(){
             /* let filteredContacts = []
 
-            for (let i = 0; i < listaContatti.length; i++) {
-                const searched = searched.toLowerCase();
-                const contact = listaContatti[i].name.toLowerCase();
+            for (let i = 0; i < contatti.length; i++) {
                 
-                if(contact.includes(searched)){
-                    filteredContacts.push(listaContatti[i])
+                const contact = contatti[i].name;
+                
+                if(contact.includes(this.searched.toLowerCase())){
+                    return filteredContacts.push(contatti[i])
                 }
-            }
-
-            return filteredContacts; */
+            }  */
             return this.listaContatti.filter((contact) => {
             return contact.name.toLowerCase().includes(this.searched.trim(" ").toLowerCase());
-            }) 
+            })
         },
 
-        /* getFormattedTime(date) {
-            const formattedTime = date.split(' ')[1];
-            return formattedTime.slice(0, formattedTime.length - 3);
-        }, */
+        formatDate(date) {
+            if(date === null){
+                return dayjs().format("HH:mm")
+            } else {
+                return dayjs(date, "DD/MM/YYYY HH:mm:ss").format("HH:mm");
+            }
+        }
     }
 });
+
+
 
 
